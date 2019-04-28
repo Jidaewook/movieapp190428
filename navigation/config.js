@@ -1,5 +1,5 @@
-import {createStackNavigator} from "react-navigation";
-import {BG_COLOR, TINT_COLOR} from "../constants/Colors";
+import { createStackNavigator } from "react-navigation";
+import { BG_COLOR, TINT_COLOR } from "../constants/Colors";
 
 // export const headerStyles = {
 //     headerStyles:{
@@ -25,7 +25,7 @@ import {BG_COLOR, TINT_COLOR} from "../constants/Colors";
 
 export const headerStyles = {
     headerStyle: {
-        backgroundColor: BG_COLOR,
+        backgroundColor: "black",
         borderBottomWidth: 0
     },
     headerTitleStyle: {

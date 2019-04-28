@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import {AppLoading, Font} from 'expo';
+import {AppLoading, Font} from "expo";
 import {Ionicons} from "@expo/vector-icons";
-import TabNavigation from "./navigation/Tapnavigation";
+import MainNavigation from "./navigation/MainNavigation";
+
 
 export default class App extends React.Component {
   state={
@@ -22,7 +23,7 @@ loadAssets = async()=>{
     const{loaded}=this.state;
     if(loaded){
       return (
-        <TabNavigation />
+        <MainNavigation />
 
       );
     } else{

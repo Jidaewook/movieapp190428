@@ -1,21 +1,40 @@
+// import React from "react";
+// import PropTypes from "prop-types";
+// import {Iconicons, Ionicons} from "@expo/vector-icons";
+// import {ACTIVE_COLOR, INACTIVE_COLOR} from "../constants/Colors";
+
+// const TabBarIcon = ({name, focused})=>(
+//     <Ionicons
+//         size={26}
+//         name={name}
+//         color={focuesed ? ACTIVE_COLOR:INACTIVE_COLOR}
+
+//     />    
+// );
+
+// TabBarIcon.propTypes={
+//     name: PropTypes.string.isRequired,
+//     focused: PropTypes.bool.isRequired
+// };
+
+// export default TabBarIcon;
+
 import React from "react";
 import PropTypes from "prop-types";
-import {Iconicons, Ionicons} from "@expo/vector-icons";
-import {ACTIVE_COLOR, INACTIVE_COLOR} from "../constants/Colors";
+import { Ionicons } from "@expo/vector-icons/build/Icons";
+import { ACTIVE_COLOR, INACTIVE_COLOR } from "../constants/Colors";
 
-const TabBarIcon = ({name, focused})=>(
+const TabBarIcon = ({ name, focused }) => (
     <Ionicons
         size={26}
         name={name}
-        color={focuesed ? ACTIVE_COLOR:INACTIVE_COLOR}
-
-    />    
+        color={focused ? ACTIVE_COLOR : INACTIVE_COLOR}
+    />
 );
 
-TabBarIcon.propTypes={
+TabBarIcon.propTypes = {
     name: PropTypes.string.isRequired,
     focused: PropTypes.bool.isRequired
 };
 
 export default TabBarIcon;
-
